@@ -33,8 +33,7 @@ $("#searchButton").on("click", function () {
             console.log("temperature: " + result.main.temp);
             $("#date").text(moment().format("dddd, MMMM Do YYYY"));
             $("#cityName").text(result.name);
-            $("#weather").text("temperature: " + result.main.temp
-            + "\nhumidity: " + result.main.humidity + "\nwind speed: " + result.wind.speed);
+            $("#weather").text("temperature: " + result.main.temp + "\nhumidity: " + result.main.humidity + "\nwind speed: " + result.wind.speed);
 
         });
 
