@@ -5,20 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style rel="stylesheet" type="text/css" href="assets/style.css"></style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 
 <body>
+    <div class="navbar navbar-expand-lg navbar-light bg-light">
+        <input type="text" id="searchBar" placeholder="Search.." class="form-control mr-sm-2"></input>
+        <button type="button" id="searchButton" class="btn btn-outline-success my-2 my-sm-0">Search</button>
+    </div>
 
+    <div id="displayDiv" style="display:none">
+        <div class="card text-white bg-primary mb-3">
+            <div class="card-header" id="date"></div>
+            <div class="card-body">
+                <h5 class="card-title" id="cityName"></h5>
+                <p class="card-text" id="weather"></p>
+            </div>
+        </div>
 
-    <input type="text" id="searchBar" placeholder="Search.."></input>
-    <button type="button" id="searchButton">Search</button>
-    <div id="weather"></div>
-    <div id="forecast"></div>
+        <div class="card">
+            <div class="card-header">
+                Five Day Forecast:
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Tommorow:</h5>
+                <p class="card-text" id="forecast1"></p>
+                <h5 class="card-title">2 Days From Now:</h5>
+                <p class="card-text" id="forecast2"></p>
+                <h5 class="card-title">3 Days From Now:</h5>
+                <p class="card-text" id="forecast3"></p>
+                <h5 class="card-title">4 Days From Now:</h5>
+                <p class="card-text" id="forecast4"></p>
+                <h5 class="card-title">5 Days From Now:</h5>
+                <p class="card-text" id="forecast5"></p>
+            </div>
+        </div>
 
+    </div>
 
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="assets/script.js"></script>
 </body>
 
