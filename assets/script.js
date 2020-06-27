@@ -33,7 +33,7 @@ $("#searchButton").on("click", function () {
             console.log("temperature: " + result.main.temp);
             $("#date").text(moment().format("dddd, MMMM Do YYYY"));
             $("#cityName").text(result.name);
-            $("#weather").text("temperature: " + result.main.temp + "\nhumidity: " + result.main.humidity + "\nwind speed: " + result.wind.speed);
+            $("#weather").text("Temperature: " + (parseInt(result.main.temp)-273) + "°C \nHumidity: " + result.main.humidity + "% \nWind Speed: " + result.wind.speed + " m/s");
 
         });
 
@@ -55,7 +55,7 @@ $("#searchButton").on("click", function () {
                 // For loop for each 5 days
                 for (i = 1; i < 6; i++) {
                     console.log("temperature: " + result.list[i].main.temp);
-                    $("#forecast" + i).text("temperature: " + result.list[i].main.temp + "\nhumidity: " + result.list[i].main.humidity);
+                    $("#forecast" + i).text("Temperature: " + (parseInt(result.list[i].main.temp) - 273) + "°C \nHumidity: " + result.list[i].main.humidity + "%");
                 }
 
             });
