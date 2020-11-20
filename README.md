@@ -1,7 +1,31 @@
 # weather-dashboard
-Coursework Assignment No. 6 for Coding Bootcamp
 
 Link to deployed application: https://benorule.github.io/weather-dashboard/
+
+# Weather Dashboard
+## Table of Contents: 
+ * [Description](#Description) 
+* [Installation Instructions](#Installation-Instructions) 
+* [Usage Information](#Usage-Information) 
+* [Contribution Guidlines](#Contribution-Guidelines) 
+* [Test Instructions](#Test-Instructions) 
+* [Questions](#Questions) 
+## Description 
+Dashboard that shows a 5 day weather forecast for a city entered by the user.
+## Installation Instructions 
+This application is hosted by GitHub pages. Alternatively, you can download the app from GitHub through the command git clone or by downloading the zip file.
+## Usage Information 
+Enter a city in the search bar and view the 5 day forecast.
+## Contribution Guidelines 
+To contribute to this project please submit a pull request on GitHub with a clear description of your contribution.
+## Test Instructions 
+To test this application try searching for a cities weather forecast.
+## Questions 
+ * GitHub: https://github.com/benorule
+* Email: benorule@outlook.com
+* License: MIT
+
+# Some information about the development process:
 
 ## Getting information from weather API
 After setting up an API key I defined a variable, queryURL, as the URL for the API. I used another variable in the URL that contained the user input of city name. I then used an ajax function to get the information from this url and created an additional function that logs the information in the console as an object. I repeated this process for the second API used for the 5 day forecast with the minor change of using a for loop to display all 5. I included all of these functions within a single onclick function associated with the search button.
